@@ -41,9 +41,9 @@ class Usuarios {
     }
 
     public function loadById($id){
-        $sql = new Sql;
+        $sql = new Sql();
 
-        $results = $sql->select("SELECT * FROM tb_usuarios WHERE idcadastro = :ID", array(
+        $results = $sql->select("SELECT * FROM tb_usuarios WHERE idusuario = :ID", array(
             ":ID"=>$id
         ));
         if(count($results) > 0){
@@ -60,7 +60,7 @@ class Usuarios {
             "idusuario"=>$this->getIdUsuario(),
             "deslogin"=>$this->getDesLogin(),
             "dessenha"=>$this->getDesSenha(),
-            "dtcadastro"=>$this->getDtCadastro()
+            "dtcadastro"=>$this->getDtCadastro()->format("d/m/Y H:i:s")
         ));
     }
 }
