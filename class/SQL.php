@@ -6,7 +6,7 @@ class Sql extends PDO {
 
     public function __construct(){
 
-        $this->conn = new PDO("sqlsrv:Database=dbphp7;server=localhost\SQLEXPRESS;ConnectionPooling=0", "sa", "lua2711fe");
+        $this->conn = new PDO("mysql:host=localhost;dbname=dbphp7", "root", "");
 
     }
 
@@ -18,7 +18,7 @@ class Sql extends PDO {
 
     private function setParam($statment, $key, $value){
 
-        $statment->bindParam($key, $value);
+        $statment->bindParam($statment, $key, $value);
 
     }
 
