@@ -1,6 +1,5 @@
 <?php
 
-require_once("SQL.php");
 
 class Usuarios {
     private $idusuario;
