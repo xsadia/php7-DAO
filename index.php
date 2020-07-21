@@ -15,8 +15,14 @@ echo json_encode($list);*/
 
 //echo json_encode($search);
 
-$usuario = new Usuarios();
+//$usuario = new Usuarios();
 
-$usuario->login("fefe", "1234");
+//$usuario->login("karinne", "alfacinho123");
+
+//echo $usuario;
+
+$usuario = new Usuarios("belezaMioBedica", "post123");
+
+$usuario->insert();
 
 echo $usuario;
