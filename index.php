@@ -29,14 +29,8 @@ echo $usuario;*/
 
 $usuario = new Usuarios();
 
-$usuario->loadById(11);
-echo "<br>";
-echo $usuario;
-echo "<br>";
-$usuario->update("profeesor", "123123!#$");
+$usuario->loadById(1);
 
-echo $usuario;
-echo "<br>";
-$usuario->loadById(11);
-echo "<br>";
+$usuario->update("Kurinne", "Gostosa123");
+
 echo $usuario;
