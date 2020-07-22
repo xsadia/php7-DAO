@@ -27,10 +27,18 @@ $usuario->insert();
 
 echo $usuario;*/
 
-$usuario = new Usuarios();
+/*$usuario = new Usuarios();
 
 $usuario->loadById(1);
 
 $usuario->update("Kurinne", "Gostosa123");
+
+echo $usuario;*/
+
+$usuario = new Usuarios();
+
+$usuario->loadById(6);
+
+$usuario->delete();
 
 echo $usuario;
