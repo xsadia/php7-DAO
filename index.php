@@ -21,8 +21,22 @@ echo json_encode($list);*/
 
 //echo $usuario;
 
-$usuario = new Usuarios("fofoxu", "liaria");
+/*$usuario = new Usuarios("fofoxu", "liaria");
 
 $usuario->insert();
 
+echo $usuario;*/
+
+$usuario = new Usuarios();
+
+$usuario->loadById(11);
+echo "<br>";
+echo $usuario;
+echo "<br>";
+$usuario->update("profeesor", "123123!#$");
+
+echo $usuario;
+echo "<br>";
+$usuario->loadById(11);
+echo "<br>";
 echo $usuario;
