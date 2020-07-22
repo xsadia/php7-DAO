@@ -21,7 +21,7 @@ echo json_encode($list);*/
 
 //echo $usuario;
 
-$usuario = new Usuarios("belezaMioBedica", "post123");
+$usuario = new Usuarios("fofoxu", "liaria");
 
 $usuario->insert();
 
